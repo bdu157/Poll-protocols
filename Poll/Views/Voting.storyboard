@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="cZc-EC-hL6">
+    <device id="retina5_9" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Voting-->
+        <scene sceneID="0Qv-4M-rsM">
+            <objects>
+                <viewController id="cZc-EC-hL6" customClass="VotingViewController" customModule="Poll" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="xVX-Rj-udZ">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="eRV-nM-22G">
+                                <rect key="frame" x="10" y="369" width="355" height="74"/>
+                                <subviews>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter you name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="niW-yG-9hk">
+                                        <rect key="frame" x="0.0" y="0.0" width="355" height="33"/>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter your response" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="OiJ-Ha-1sc">
+                                        <rect key="frame" x="0.0" y="41" width="355" height="33"/>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                </subviews>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Eoi-nJ-bh2">
+                                <rect key="frame" x="150" y="451" width="75" height="38"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                <state key="normal" title="Submit"/>
+                                <connections>
+                                    <action selector="submitTapped:" destination="cZc-EC-hL6" eventType="touchUpInside" id="RXS-y4-tI9"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="What is your favorite color?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5tS-4f-l2e">
+                                <rect key="frame" x="60" y="64" width="255" height="25.333333333333329"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                <color key="textColor" red="1" green="0.59313957740000001" blue="0.41730461829999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Eoi-nJ-bh2" firstAttribute="top" secondItem="eRV-nM-22G" secondAttribute="bottom" constant="8" id="2dR-t1-f7Z"/>
+                            <constraint firstItem="5tS-4f-l2e" firstAttribute="leading" secondItem="0yv-nh-Drh" secondAttribute="leading" constant="60" id="6J5-7n-jMo"/>
+                            <constraint firstItem="eRV-nM-22G" firstAttribute="leading" secondItem="0yv-nh-Drh" secondAttribute="leading" constant="10" id="833-t3-J9F"/>
+                            <constraint firstItem="Eoi-nJ-bh2" firstAttribute="top" secondItem="eRV-nM-22G" secondAttribute="bottom" constant="8" id="9Pc-kT-zxM"/>
+                            <constraint firstItem="5tS-4f-l2e" firstAttribute="top" secondItem="0yv-nh-Drh" secondAttribute="top" constant="20" id="EYE-Lq-1jr"/>
+                            <constraint firstItem="0yv-nh-Drh" firstAttribute="trailing" secondItem="Eoi-nJ-bh2" secondAttribute="trailing" constant="150" id="FY7-Y8-fUk"/>
+                            <constraint firstItem="0yv-nh-Drh" firstAttribute="trailing" secondItem="5tS-4f-l2e" secondAttribute="trailing" constant="60" id="KGa-Q3-XqJ"/>
+                            <constraint firstItem="0yv-nh-Drh" firstAttribute="trailing" secondItem="eRV-nM-22G" secondAttribute="trailing" constant="10" id="KJD-1O-Zsg"/>
+                            <constraint firstItem="Eoi-nJ-bh2" firstAttribute="leading" secondItem="0yv-nh-Drh" secondAttribute="leading" constant="150" id="Lj2-s1-53f"/>
+                            <constraint firstItem="eRV-nM-22G" firstAttribute="centerX" secondItem="xVX-Rj-udZ" secondAttribute="centerX" id="QcV-3Y-UhP"/>
+                            <constraint firstItem="eRV-nM-22G" firstAttribute="centerY" secondItem="xVX-Rj-udZ" secondAttribute="centerY" id="vh8-ma-wtj"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="0yv-nh-Drh"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Voting" id="H59-Tj-gZh" userLabel="Voting"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="nameField" destination="niW-yG-9hk" id="B1m-WE-JJ5"/>
+                        <outlet property="responseField" destination="OiJ-Ha-1sc" id="n4w-b0-kgU"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9s7-DE-DFT" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-233" y="318"/>
+        </scene>
+    </scenes>
+</document>
