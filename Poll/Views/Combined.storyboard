@@ -21,13 +21,13 @@
                             <containerView opaque="NO" contentMode="scaleAspectFit" translatesAutoresizingMaskIntoConstraints="NO" id="Kfn-KG-gPE" userLabel="Voting Container">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="406"/>
                                 <connections>
-                                    <segue destination="l0x-zz-TKx" kind="embed" id="m3U-2s-sXL"/>
+                                    <segue destination="l0x-zz-TKx" kind="embed" identifier="ToVotingVC" id="m3U-2s-sXL"/>
                                 </connections>
                             </containerView>
                             <containerView opaque="NO" contentMode="scaleAspectFit" translatesAutoresizingMaskIntoConstraints="NO" id="x61-6V-mgY" userLabel="Results Container">
                                 <rect key="frame" x="0.0" y="406" width="375" height="406"/>
                                 <connections>
-                                    <segue destination="Q4C-cu-FC3" kind="embed" id="2s8-PG-saK"/>
+                                    <segue destination="Q4C-cu-FC3" kind="embed" identifier="ToResultsVC" id="2s8-PG-saK"/>
                                 </connections>
                             </containerView>
                         </subviews>

@@ -8,7 +8,8 @@
 
 import UIKit
 
-class CombinedViewController: UIViewController {
+class CombinedViewController: UIViewController, VoteControllerProtocols {
+    var voteController: VoteController?
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -17,7 +18,6 @@ class CombinedViewController: UIViewController {
     }
     
 
-    /*
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
@@ -25,6 +25,6 @@ class CombinedViewController: UIViewController {
         // Get the new view controller using segue.destination.
         // Pass the selected object to the new view controller.
     }
-    */
+
 
 }

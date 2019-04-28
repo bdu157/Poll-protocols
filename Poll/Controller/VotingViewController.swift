@@ -8,7 +8,9 @@
 
 import UIKit
 
-class VotingViewController: UIViewController {
+class VotingViewController: UIViewController, VoteControllerProtocols {
+    var voteController: VoteController?
+    
     @IBOutlet weak var nameField: UITextField!
     @IBOutlet weak var responseField: UITextField!
     
