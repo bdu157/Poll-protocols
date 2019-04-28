@@ -15,10 +15,13 @@ class ResultsTableViewController: UITableViewController, VoteControllerProtocols
         super.viewDidLoad()
 
     }
-    
+  
+
     override func viewWillAppear(_ animated: Bool) {
         tableView.reloadData()
     }
+    
+
 
     // MARK: - Table view data source
 
