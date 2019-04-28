@@ -16,11 +16,14 @@ class VotingViewController: UIViewController, VoteControllerProtocols {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-    
     }
     
     @IBAction func submitTapped(_ sender: Any) {
+       guard let name = nameField.text,
+        let response = responseField.text else {return}
+        voteController?.createVote(name: name, response: response)      //it was reaching a method - createVote becuase it was private
         
+        nameField.text = ""
+        responseField.text = ""
     }
 }

@@ -12,7 +12,7 @@ import UIKit
 class VoteController {
     var votes: [Vote] = []
     
-    private func create(name: String, response: String) {
+    func createVote(name: String, response: String) {
         let input = Vote(name: name, response: response)
         votes.append(input)
     }
