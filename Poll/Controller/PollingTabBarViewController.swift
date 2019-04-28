@@ -10,10 +10,16 @@ import UIKit
 
 class PollingTabBarViewController: UITabBarController {
 
+    var voteContoller : VoteController = VoteController()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        for childVC in children {
+            if var childVC = childVC as? VoteControllerProtocols {
+                childVC.voteController = voteContoller
+            }
+        }
     }
 
 }
